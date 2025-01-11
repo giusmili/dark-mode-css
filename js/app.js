@@ -5,9 +5,11 @@ document.addEventListener("DOMContentLoaded", () => {
   
     const cardImage = document.querySelector(".card-image");
     const modeText = document.querySelector(".mode-text");
-  
+
+    /* fonction centrale */
     const detectColorScheme = () => {
       let theme = "dark";
+    
     /* Local storage pour memoriser le theme et le synchroniser avec celui de la machine utilisateur */
       if (localStorage.getItem("theme")) {
         theme = localStorage.getItem("theme") === "light" ? "light" : "dark";
